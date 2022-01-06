@@ -16,6 +16,7 @@
 		7CD647032787A1170098381C /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CD647012787A1170098381C /* LoginViewController.xib */; };
 		7CD647072787A2C80098381C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD647062787A2C80098381C /* AppCoordinator.swift */; };
 		7CD647092787A3090098381C /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD647082787A3090098381C /* LoginCoordinator.swift */; };
+		7CD6470E2787AD050098381C /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD6470D2787AD050098381C /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		7CD647012787A1170098381C /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		7CD647062787A2C80098381C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		7CD647082787A3090098381C /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		7CD6470D2787AD050098381C /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 		7CD646FB27879DAD0098381C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7CD6470B2787ACA20098381C /* Common */,
 				7CD646FD27879DEF0098381C /* Assets */,
 				7CD646FC27879DD30098381C /* Xib */,
 				7CD646FA27879D8E0098381C /* Storyboard */,
@@ -199,7 +202,6 @@
 			isa = PBXGroup;
 			children = (
 				7CD647062787A2C80098381C /* AppCoordinator.swift */,
-				7CD647082787A3090098381C /* LoginCoordinator.swift */,
 				7CD647052787A1480098381C /* Flows */,
 			);
 			name = Coordinator;
@@ -208,8 +210,26 @@
 		7CD647052787A1480098381C /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				7CD647082787A3090098381C /* LoginCoordinator.swift */,
 			);
 			path = Flows;
+			sourceTree = "<group>";
+		};
+		7CD6470A2787AAC90098381C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extension;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		7CD6470B2787ACA20098381C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				7CD6470A2787AAC90098381C /* Extension */,
+				7CD6470D2787AD050098381C /* CustomButton.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,6 +367,7 @@
 				7CD647022787A1170098381C /* LoginViewController.swift in Sources */,
 				7CD647092787A3090098381C /* LoginCoordinator.swift in Sources */,
 				7CD646C9278798E40098381C /* AppDelegate.swift in Sources */,
+				7CD6470E2787AD050098381C /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

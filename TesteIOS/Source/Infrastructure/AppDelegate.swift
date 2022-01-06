@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
 
         navController.navigationBar.backItem?.title = " "
+        navController.isNavigationBarHidden = true
         window?.rootViewController = navController
 
         self.appCoordinator = AppCoordinator(navigationController: navController)
