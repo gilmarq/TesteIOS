@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		7CD646C9278798E40098381C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD646C8278798E40098381C /* AppDelegate.swift */; };
-		7CD646CB278798E40098381C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD646CA278798E40098381C /* SceneDelegate.swift */; };
-		7CD646CD278798E40098381C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD646CC278798E40098381C /* ViewController.swift */; };
-		7CD646D0278798E40098381C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CD646CE278798E40098381C /* Main.storyboard */; };
 		7CD646D2278798EB0098381C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CD646D1278798EB0098381C /* Assets.xcassets */; };
 		7CD646D5278798EB0098381C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CD646D3278798EB0098381C /* LaunchScreen.storyboard */; };
 		7CD646E0278798EB0098381C /* TesteIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD646DF278798EB0098381C /* TesteIOSTests.swift */; };
 		7CD646EB278798EB0098381C /* TesteIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD646EA278798EB0098381C /* TesteIOSUITests.swift */; };
+		7CD647022787A1170098381C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD647002787A1170098381C /* LoginViewController.swift */; };
+		7CD647032787A1170098381C /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CD647012787A1170098381C /* LoginViewController.xib */; };
+		7CD647072787A2C80098381C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD647062787A2C80098381C /* AppCoordinator.swift */; };
+		7CD647092787A3090098381C /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD647082787A3090098381C /* LoginCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +38,6 @@
 /* Begin PBXFileReference section */
 		7CD646C5278798E40098381C /* TesteIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TesteIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CD646C8278798E40098381C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7CD646CA278798E40098381C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7CD646CC278798E40098381C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7CD646CF278798E40098381C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7CD646D1278798EB0098381C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CD646D4278798EB0098381C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7CD646D6278798EB0098381C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +47,10 @@
 		7CD646E6278798EB0098381C /* TesteIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TesteIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CD646EA278798EB0098381C /* TesteIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesteIOSUITests.swift; sourceTree = "<group>"; };
 		7CD646EC278798EB0098381C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CD647002787A1170098381C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7CD647012787A1170098381C /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		7CD647062787A2C80098381C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		7CD647082787A3090098381C /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +101,8 @@
 		7CD646C7278798E40098381C /* TesteIOS */ = {
 			isa = PBXGroup;
 			children = (
-				7CD646C8278798E40098381C /* AppDelegate.swift */,
-				7CD646CA278798E40098381C /* SceneDelegate.swift */,
-				7CD646CC278798E40098381C /* ViewController.swift */,
-				7CD646CE278798E40098381C /* Main.storyboard */,
-				7CD646D1278798EB0098381C /* Assets.xcassets */,
-				7CD646D3278798EB0098381C /* LaunchScreen.storyboard */,
-				7CD646D6278798EB0098381C /* Info.plist */,
+				7CD646FB27879DAD0098381C /* Resources */,
+				7CD646F927879D770098381C /* Source */,
 			);
 			path = TesteIOS;
 			sourceTree = "<group>";
@@ -126,6 +123,93 @@
 				7CD646EC278798EB0098381C /* Info.plist */,
 			);
 			path = TesteIOSUITests;
+			sourceTree = "<group>";
+		};
+		7CD646F827879C4D0098381C /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				7CD646C8278798E40098381C /* AppDelegate.swift */,
+				7CD646D6278798EB0098381C /* Info.plist */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		7CD646F927879D770098381C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				7CD647042787A12E0098381C /* Coordinator */,
+				7CD646FE2787A0BD0098381C /* Login */,
+				7CD646F827879C4D0098381C /* Infrastructure */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		7CD646FA27879D8E0098381C /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				7CD646D3278798EB0098381C /* LaunchScreen.storyboard */,
+			);
+			name = Storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		7CD646FB27879DAD0098381C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7CD646FD27879DEF0098381C /* Assets */,
+				7CD646FC27879DD30098381C /* Xib */,
+				7CD646FA27879D8E0098381C /* Storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7CD646FC27879DD30098381C /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				7CD647012787A1170098381C /* LoginViewController.xib */,
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
+		7CD646FD27879DEF0098381C /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				7CD646D1278798EB0098381C /* Assets.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		7CD646FE2787A0BD0098381C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				7CD646FF2787A0E90098381C /* Controller */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		7CD646FF2787A0E90098381C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7CD647002787A1170098381C /* LoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7CD647042787A12E0098381C /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				7CD647062787A2C80098381C /* AppCoordinator.swift */,
+				7CD647082787A3090098381C /* LoginCoordinator.swift */,
+				7CD647052787A1480098381C /* Flows */,
+			);
+			name = Coordinator;
+			sourceTree = "<group>";
+		};
+		7CD647052787A1480098381C /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Flows;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +318,7 @@
 			files = (
 				7CD646D5278798EB0098381C /* LaunchScreen.storyboard in Resources */,
 				7CD646D2278798EB0098381C /* Assets.xcassets in Resources */,
-				7CD646D0278798E40098381C /* Main.storyboard in Resources */,
+				7CD647032787A1170098381C /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,9 +343,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CD646CD278798E40098381C /* ViewController.swift in Sources */,
+				7CD647072787A2C80098381C /* AppCoordinator.swift in Sources */,
+				7CD647022787A1170098381C /* LoginViewController.swift in Sources */,
+				7CD647092787A3090098381C /* LoginCoordinator.swift in Sources */,
 				7CD646C9278798E40098381C /* AppDelegate.swift in Sources */,
-				7CD646CB278798E40098381C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +382,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7CD646CE278798E40098381C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7CD646CF278798E40098381C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7CD646D3278798EB0098381C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -436,7 +513,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WTNZ8ZXU8Z;
-				INFOPLIST_FILE = TesteIOS/Info.plist;
+				INFOPLIST_FILE = TesteIOS/Source/Infrastructure/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -444,7 +522,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.TesteIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -454,7 +532,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WTNZ8ZXU8Z;
-				INFOPLIST_FILE = TesteIOS/Info.plist;
+				INFOPLIST_FILE = TesteIOS/Source/Infrastructure/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,7 +541,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.TesteIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
