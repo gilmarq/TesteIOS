@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -212,6 +212,8 @@
 		7CD646FE2787A0BD0098381C /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				7CD647102787C5300098381C /* Model */,
+				7CD6470F2787C51D0098381C /* ViewModel */,
 				7CD646FF2787A0E90098381C /* Controller */,
 			);
 			name = Login;
@@ -259,6 +261,20 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		7CD6470F2787C51D0098381C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7CD647102787C5300098381C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		A95016849C3F6B4EA60DDAED /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -269,7 +285,6 @@
 				32CBDB96595F5FD6F6659F54 /* Pods-TesteIOSTests.debug.xcconfig */,
 				F68D9465B81727286B5CED33 /* Pods-TesteIOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

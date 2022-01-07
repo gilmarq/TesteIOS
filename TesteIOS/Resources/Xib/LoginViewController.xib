@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="TesteIOS" customModuleProvider="target">
             <connections>
+                <outlet property="emailLabel" destination="jH4-H0-bqh" id="bOC-0T-xlm"/>
+                <outlet property="passwordLabel" destination="Yef-zW-OqE" id="HN0-kc-l93"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -49,6 +51,9 @@
                     <state key="normal" title="Entrar">
                         <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     </state>
+                    <connections>
+                        <action selector="didTapLogin:" destination="-1" eventType="touchUpInside" id="9yL-R7-bdD"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

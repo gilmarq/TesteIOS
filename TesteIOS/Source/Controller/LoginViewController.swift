@@ -10,21 +10,20 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    // MARK: - Outlet
+
+    @IBOutlet weak var passwordLabel: UITextField!
+    @IBOutlet weak var emailLabel: UITextField!
+
+    // MARK:-  life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
 
+    // MARK: - action
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func didTapLogin(_ sender: Any) {
     }
-    */
 
 }
