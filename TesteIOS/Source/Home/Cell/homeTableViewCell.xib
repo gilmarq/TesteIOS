@@ -16,9 +16,68 @@
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="314" height="201"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q0e-qO-VRG">
+                        <rect key="frame" x="16" y="16" width="250" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgy-WV-zKH">
+                        <rect key="frame" x="16" y="45" width="200" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="G1g-UR-sYa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SGz-YU-VgX">
+                        <rect key="frame" x="224" y="45" width="74" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="maV-ue-PLW">
+                        <rect key="frame" x="16" y="81" width="282" height="103"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="103" id="67X-QM-A8i"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8pz-eN-e93">
+                        <rect key="frame" x="276" y="16" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="lxd-bW-vQp"/>
+                            <constraint firstAttribute="width" constant="22" id="v8P-5D-odR"/>
+                        </constraints>
+                        <state key="normal" image="chevron.down" catalog="system"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cgy-WV-zKH" firstAttribute="leading" secondItem="Q0e-qO-VRG" secondAttribute="leading" id="05K-BB-Mt6"/>
+                    <constraint firstItem="cgy-WV-zKH" firstAttribute="top" secondItem="Q0e-qO-VRG" secondAttribute="bottom" constant="8" id="0g4-Bd-5xJ"/>
+                    <constraint firstItem="Q0e-qO-VRG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="14o-WW-QZE"/>
+                    <constraint firstAttribute="trailing" secondItem="8pz-eN-e93" secondAttribute="trailing" constant="16" id="1zW-9t-LgZ"/>
+                    <constraint firstItem="SGz-YU-VgX" firstAttribute="top" secondItem="cgy-WV-zKH" secondAttribute="top" id="241-ae-53Z"/>
+                    <constraint firstItem="maV-ue-PLW" firstAttribute="trailing" secondItem="8pz-eN-e93" secondAttribute="trailing" id="8Eh-dk-MS7"/>
+                    <constraint firstItem="maV-ue-PLW" firstAttribute="leading" secondItem="cgy-WV-zKH" secondAttribute="leading" id="AnJ-Iz-zjg"/>
+                    <constraint firstItem="Q0e-qO-VRG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="CFr-gg-Zwi"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="maV-ue-PLW" secondAttribute="bottom" constant="6" id="Cxm-4i-NFj"/>
+                    <constraint firstAttribute="trailing" secondItem="SGz-YU-VgX" secondAttribute="trailing" constant="16" id="EOG-n0-uxj"/>
+                    <constraint firstItem="maV-ue-PLW" firstAttribute="top" secondItem="cgy-WV-zKH" secondAttribute="bottom" constant="15" id="H1o-Ai-pcN"/>
+                    <constraint firstItem="8pz-eN-e93" firstAttribute="leading" secondItem="Q0e-qO-VRG" secondAttribute="trailing" constant="10" id="OuK-Yp-DTT"/>
+                    <constraint firstItem="8pz-eN-e93" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="c26-jC-GnE"/>
+                    <constraint firstItem="SGz-YU-VgX" firstAttribute="leading" secondItem="cgy-WV-zKH" secondAttribute="trailing" constant="8" id="lx4-Kv-g4f"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <point key="canvasLocation" x="-7" y="91"/>
+            <point key="canvasLocation" x="-17.39130434782609" y="65.959821428571431"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="chevron.down" catalog="system" width="64" height="36"/>
+    </resources>
 </document>
