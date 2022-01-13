@@ -13,11 +13,22 @@
 		7CD646D5278798EB0098381C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CD646D3278798EB0098381C /* LaunchScreen.storyboard */; };
 		7CD646E0278798EB0098381C /* TesteIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD646DF278798EB0098381C /* TesteIOSTests.swift */; };
 		7CD646EB278798EB0098381C /* TesteIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD646EA278798EB0098381C /* TesteIOSUITests.swift */; };
-		7CD647022787A1170098381C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD647002787A1170098381C /* LoginViewController.swift */; };
-		7CD647032787A1170098381C /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CD647012787A1170098381C /* LoginViewController.xib */; };
 		7CD647072787A2C80098381C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD647062787A2C80098381C /* AppCoordinator.swift */; };
 		7CD647092787A3090098381C /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD647082787A3090098381C /* LoginCoordinator.swift */; };
 		7CD6470E2787AD050098381C /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD6470D2787AD050098381C /* CustomButton.swift */; };
+		7CD6473C278FF4CA0098381C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD6473A278FF4CA0098381C /* LoginViewController.swift */; };
+		7CD6473D278FF4CA0098381C /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CD6473B278FF4CA0098381C /* LoginViewController.xib */; };
+		7CD6473F278FF63D0098381C /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD6473E278FF63D0098381C /* LoginModel.swift */; };
+		7CD6474A278FF6860098381C /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CD64744278FF6860098381C /* HomeViewController.xib */; };
+		7CD6474B278FF6860098381C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD64745278FF6860098381C /* HomeViewController.swift */; };
+		7CD6474C278FF6860098381C /* homeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD64747278FF6860098381C /* homeTableViewCell.swift */; };
+		7CD6474D278FF6860098381C /* homeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CD64748278FF6860098381C /* homeTableViewCell.xib */; };
+		7CD6474E278FF6860098381C /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD64749278FF6860098381C /* HomeModel.swift */; };
+		7CD6475A278FF6D80098381C /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD64753278FF6D80098381C /* DetailViewModel.swift */; };
+		7CD6475B278FF6D80098381C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD64754278FF6D80098381C /* DetailViewController.swift */; };
+		7CD6475E278FF6D90098381C /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CD64758278FF6D80098381C /* DetailViewController.xib */; };
+		7CD64763278FF7520098381C /* DetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD64762278FF7520098381C /* DetailModel.swift */; };
+		7CD64765278FF8D10098381C /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD64764278FF8D10098381C /* HomeCoordinator.swift */; };
 		8E016DD84D3C35275AD7E269 /* Pods_TesteIOS_TesteIOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 615480816C299965A1E8D9A0 /* Pods_TesteIOS_TesteIOSUITests.framework */; };
 		B3E957C6BABBDA89A5ED80AF /* Pods_TesteIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C870FB8D351C67647BE2E23 /* Pods_TesteIOSTests.framework */; };
 /* End PBXBuildFile section */
@@ -57,11 +68,22 @@
 		7CD646E6278798EB0098381C /* TesteIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TesteIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CD646EA278798EB0098381C /* TesteIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesteIOSUITests.swift; sourceTree = "<group>"; };
 		7CD646EC278798EB0098381C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7CD647002787A1170098381C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		7CD647012787A1170098381C /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		7CD647062787A2C80098381C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		7CD647082787A3090098381C /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		7CD6470D2787AD050098381C /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		7CD6473A278FF4CA0098381C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7CD6473B278FF4CA0098381C /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		7CD6473E278FF63D0098381C /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginModel.swift; path = TesteIOS/Source/LoginModel.swift; sourceTree = SOURCE_ROOT; };
+		7CD64744278FF6860098381C /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		7CD64745278FF6860098381C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		7CD64747278FF6860098381C /* homeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homeTableViewCell.swift; sourceTree = "<group>"; };
+		7CD64748278FF6860098381C /* homeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = homeTableViewCell.xib; sourceTree = "<group>"; };
+		7CD64749278FF6860098381C /* HomeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		7CD64753278FF6D80098381C /* DetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		7CD64754278FF6D80098381C /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		7CD64758278FF6D80098381C /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		7CD64762278FF7520098381C /* DetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailModel.swift; sourceTree = "<group>"; };
+		7CD64764278FF8D10098381C /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		A4AD467A82DA44525A63806A /* Pods-TesteIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TesteIOS.release.xcconfig"; path = "Target Support Files/Pods-TesteIOS/Pods-TesteIOS.release.xcconfig"; sourceTree = "<group>"; };
 		AE7D4CF5E88A28523EC7BDD0 /* Pods-TesteIOS-TesteIOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TesteIOS-TesteIOSUITests.release.xcconfig"; path = "Target Support Files/Pods-TesteIOS-TesteIOSUITests/Pods-TesteIOS-TesteIOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F68D9465B81727286B5CED33 /* Pods-TesteIOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TesteIOSTests.release.xcconfig"; path = "Target Support Files/Pods-TesteIOSTests/Pods-TesteIOSTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -167,6 +189,8 @@
 			isa = PBXGroup;
 			children = (
 				7CD647042787A12E0098381C /* Coordinator */,
+				7CD64751278FF6D80098381C /* Detail */,
+				7CD64742278FF6860098381C /* Home */,
 				7CD646FE2787A0BD0098381C /* Login */,
 				7CD646F827879C4D0098381C /* Infrastructure */,
 			);
@@ -187,18 +211,9 @@
 			children = (
 				7CD6470B2787ACA20098381C /* Common */,
 				7CD646FD27879DEF0098381C /* Assets */,
-				7CD646FC27879DD30098381C /* Xib */,
 				7CD646FA27879D8E0098381C /* Storyboard */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		7CD646FC27879DD30098381C /* Xib */ = {
-			isa = PBXGroup;
-			children = (
-				7CD647012787A1170098381C /* LoginViewController.xib */,
-			);
-			path = Xib;
 			sourceTree = "<group>";
 		};
 		7CD646FD27879DEF0098381C /* Assets */ = {
@@ -213,18 +228,10 @@
 			isa = PBXGroup;
 			children = (
 				7CD647102787C5300098381C /* Model */,
+				7CD64739278FF4AA0098381C /* View */,
 				7CD6470F2787C51D0098381C /* ViewModel */,
-				7CD646FF2787A0E90098381C /* Controller */,
 			);
 			name = Login;
-			sourceTree = "<group>";
-		};
-		7CD646FF2787A0E90098381C /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				7CD647002787A1170098381C /* LoginViewController.swift */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		7CD647042787A12E0098381C /* Coordinator */ = {
@@ -240,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				7CD647082787A3090098381C /* LoginCoordinator.swift */,
+				7CD64764278FF8D10098381C /* HomeCoordinator.swift */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -271,9 +279,99 @@
 		7CD647102787C5300098381C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7CD6473E278FF63D0098381C /* LoginModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
+		};
+		7CD64739278FF4AA0098381C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7CD6473A278FF4CA0098381C /* LoginViewController.swift */,
+				7CD6473B278FF4CA0098381C /* LoginViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7CD64742278FF6860098381C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7CD64743278FF6860098381C /* ViewModel */,
+				7CD64749278FF6860098381C /* HomeModel.swift */,
+				7CD6474F278FF6930098381C /* View */,
+				7CD64746278FF6860098381C /* Cell */,
+				7CD64750278FF69D0098381C /* New Group */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7CD64743278FF6860098381C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7CD64746278FF6860098381C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7CD64747278FF6860098381C /* homeTableViewCell.swift */,
+				7CD64748278FF6860098381C /* homeTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		7CD6474F278FF6930098381C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7CD64744278FF6860098381C /* HomeViewController.xib */,
+				7CD64745278FF6860098381C /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7CD64750278FF69D0098381C /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		7CD64751278FF6D80098381C /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				7CD64752278FF6D80098381C /* ViewModel */,
+				7CD64755278FF6D80098381C /* View */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		7CD64752278FF6D80098381C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7CD64753278FF6D80098381C /* DetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7CD64755278FF6D80098381C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7CD64754278FF6D80098381C /* DetailViewController.swift */,
+				7CD64758278FF6D80098381C /* DetailViewController.xib */,
+				7CD64761278FF7520098381C /* Model */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7CD64761278FF7520098381C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7CD64762278FF7520098381C /* DetailModel.swift */,
+			);
+			name = Model;
+			path = TesteIOS/Source/Detail/Model;
+			sourceTree = SOURCE_ROOT;
 		};
 		A95016849C3F6B4EA60DDAED /* Pods */ = {
 			isa = PBXGroup;
@@ -397,9 +495,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CD6474D278FF6860098381C /* homeTableViewCell.xib in Resources */,
 				7CD646D5278798EB0098381C /* LaunchScreen.storyboard in Resources */,
+				7CD6475E278FF6D90098381C /* DetailViewController.xib in Resources */,
 				7CD646D2278798EB0098381C /* Assets.xcassets in Resources */,
-				7CD647032787A1170098381C /* LoginViewController.xib in Resources */,
+				7CD6473D278FF4CA0098381C /* LoginViewController.xib in Resources */,
+				7CD6474A278FF6860098381C /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,10 +628,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CD64763278FF7520098381C /* DetailModel.swift in Sources */,
+				7CD6475B278FF6D80098381C /* DetailViewController.swift in Sources */,
 				7CD647072787A2C80098381C /* AppCoordinator.swift in Sources */,
-				7CD647022787A1170098381C /* LoginViewController.swift in Sources */,
+				7CD6473F278FF63D0098381C /* LoginModel.swift in Sources */,
+				7CD6474E278FF6860098381C /* HomeModel.swift in Sources */,
+				7CD6475A278FF6D80098381C /* DetailViewModel.swift in Sources */,
 				7CD647092787A3090098381C /* LoginCoordinator.swift in Sources */,
 				7CD646C9278798E40098381C /* AppDelegate.swift in Sources */,
+				7CD64765278FF8D10098381C /* HomeCoordinator.swift in Sources */,
+				7CD6473C278FF4CA0098381C /* LoginViewController.swift in Sources */,
+				7CD6474B278FF6860098381C /* HomeViewController.swift in Sources */,
+				7CD6474C278FF6860098381C /* homeTableViewCell.swift in Sources */,
 				7CD6470E2787AD050098381C /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

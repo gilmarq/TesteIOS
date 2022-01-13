@@ -1,20 +1,20 @@
 //
-//  LoginCoordinator.swift
+//  HomeCoordinator.swift
 //  TesteIOS
 //
-//  Created by Gilmar Queiroz on 06/01/22.
+//  Created by Gilmar Queiroz on 13/01/22.
 //  Copyright © 2022 Gilmar Queiroz. All rights reserved.
 //
 
 import UIKit
 
-class LoginCoordinator {
+class HomeCoordinator {
 
     // MARK: - Instance dependencies
     private let navigationController: UINavigationController
 
     // MARK: - Instance state
-    private var viewController: LoginViewController!
+    private var viewController: HomeViewController!
 
     // MARK: - Initializers
     init(navigationController: UINavigationController) {
@@ -23,8 +23,7 @@ class LoginCoordinator {
 
     // MARK: - Coordinator functions
     func start() {
-        self.viewController = LoginViewController()
+        self.viewController = HomeViewController()
         self.navigationController.pushViewController(self.viewController, animated: false)
     }
 }
-
