@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="201" id="KGk-i7-Jjw" customClass="homeTableViewCell" customModule="TesteIOS" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="201" id="KGk-i7-Jjw" customClass="HomeTableViewCell">
             <rect key="frame" x="0.0" y="0.0" width="314" height="201"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -56,6 +56,7 @@
                         <state key="normal" image="chevron.down" catalog="system"/>
                     </button>
                 </subviews>
+                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
                     <constraint firstItem="cgy-WV-zKH" firstAttribute="leading" secondItem="Q0e-qO-VRG" secondAttribute="leading" id="05K-BB-Mt6"/>
                     <constraint firstItem="cgy-WV-zKH" firstAttribute="top" secondItem="Q0e-qO-VRG" secondAttribute="bottom" constant="8" id="0g4-Bd-5xJ"/>
@@ -74,6 +75,12 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dataLabel" destination="SGz-YU-VgX" id="UjQ-ET-UaK"/>
+                <outlet property="descriptionLabel" destination="maV-ue-PLW" id="qBv-It-yvP"/>
+                <outlet property="priceLabel" destination="cgy-WV-zKH" id="dd7-TP-CG9"/>
+                <outlet property="titleLabel" destination="Q0e-qO-VRG" id="Upu-nu-Dca"/>
+            </connections>
             <point key="canvasLocation" x="-17.39130434782609" y="65.959821428571431"/>
         </tableViewCell>
     </objects>
