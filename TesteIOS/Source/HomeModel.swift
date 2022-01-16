@@ -9,6 +9,8 @@
 import Foundation
 import CoreLocation
 
+
+
 struct HomeInfo: Codable {
     let code: Int
     let status: String
@@ -16,18 +18,17 @@ struct HomeInfo: Codable {
 }
 
 struct HomeModel: Codable {
-    var people: [String] = []
-     var date: Data
-     var description: String
+     var date: Date?
+     var description: String?
 //     var longitude: CLLocation
 //     var latitude: CLLocation
-     var price: Double
-     var title: String
-     var id: Int
-     var image: URL
+     var price: Double?
+     var title: String?
+     var id: Int?
+     var image: URL?
 
-    init( people: [String], date: Data, description: String, /*longitude: CLLocation, latitude: CLLocation*/ price: Double, title: String, id: Int, image: URL) {
-        self.people = people
+    init( date: Date, description: String, /*longitude: CLLocation, latitude: CLLocation*/ price: Double, title: String, id: Int, image: URL) {
+       // self.people = people
         self.date = date
         self.description = description
 //        self.longitude = longitude
@@ -37,5 +38,27 @@ struct HomeModel: Codable {
         self.id = id
         self.image = image
     }
+
+//    private enum CodingKeys: String, CodingKey {
+//        typealias RawValue = <#type#>
+//
+//          case date: "date"
+//         case description: "   var date: Date
+//              var description: String
+//         //     var longitude: CLLocation
+//         //     var latitude: CLLocation
+//              var price: Double
+//              var title: String
+//              var id: Int
+//              var image: URL""
+//        //     var longitude: CLLocation
+//        //     var latitude: CLLocation
+//             var price: Double
+//             var title: String
+//             var id: Int
+//             var image: URL
+//
+//
+//       }
 }
 

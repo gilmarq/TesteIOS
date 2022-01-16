@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="TesteIOS" customModuleProvider="target">
             <connections>
-                <outlet property="TableView" destination="byF-g8-6FZ" id="Wxs-Ng-9iD"/>
+                <outlet property="collection" destination="z0G-ho-4WP" id="V20-ld-DzP"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -25,24 +25,30 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="140" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="byF-g8-6FZ">
-                    <rect key="frame" x="16" y="97" width="382" height="749"/>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="z0G-ho-4WP">
+                    <rect key="frame" x="16" y="97" width="382" height="781"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="G5d-TO-fyQ">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
                     <connections>
-                        <outlet property="dataSource" destination="-1" id="8lI-FS-fBk"/>
-                        <outlet property="delegate" destination="-1" id="YTa-hn-XIu"/>
+                        <outlet property="dataSource" destination="-1" id="cTU-ya-q4h"/>
+                        <outlet property="delegate" destination="-1" id="H7E-nV-7LL"/>
                     </connections>
-                </tableView>
+                </collectionView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cvV-qj-1ES" secondAttribute="trailing" constant="16" id="4sp-A1-Ts7"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="byF-g8-6FZ" secondAttribute="bottom" constant="16" id="ZvR-z4-t1H"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="byF-g8-6FZ" secondAttribute="trailing" constant="16" id="nCc-yi-2xy"/>
-                <constraint firstItem="byF-g8-6FZ" firstAttribute="top" secondItem="cvV-qj-1ES" secondAttribute="bottom" constant="16" id="nRI-A9-m5k"/>
+                <constraint firstItem="z0G-ho-4WP" firstAttribute="top" secondItem="cvV-qj-1ES" secondAttribute="bottom" constant="16" id="PaR-jX-tu7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="z0G-ho-4WP" secondAttribute="trailing" constant="16" id="XXV-FQ-hSQ"/>
+                <constraint firstItem="z0G-ho-4WP" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="16" id="a7I-xX-ThS"/>
                 <constraint firstItem="cvV-qj-1ES" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="p8B-Ot-csA"/>
                 <constraint firstItem="cvV-qj-1ES" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="tVk-qQ-bY6"/>
-                <constraint firstItem="byF-g8-6FZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="u40-F5-sP8"/>
+                <constraint firstItem="z0G-ho-4WP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="uhQ-Wm-n9o"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="140.57971014492756" y="124.55357142857142"/>
