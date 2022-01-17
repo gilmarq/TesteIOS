@@ -6,59 +6,42 @@
 //  Copyright © 2022 Gilmar Queiroz. All rights reserved.
 //
 
-import Foundation
-import CoreLocation
+import UIKit
 
 
+struct HomeModel: Decodable {
+// //  let people: [People]
+//    let date: Int
+//   // let description: String
+//   // let image: String
+//  //  let price: Double
+//  //  let title, id: String
+//}
 
-struct HomeInfo: Codable {
-    let code: Int
-    let status: String
-    let data: [HomeModel]
-}
+   let people: [People]?
+    let date: Int?
+    let description: String?
+    let image: String?
+    let longitude, latitude, price: Double?
+    let title, id: String?
 
-struct HomeModel: Codable {
-     var date: Date?
-     var description: String?
-//     var longitude: CLLocation
-//     var latitude: CLLocation
-     var price: Double?
-     var title: String?
-     var id: Int?
-     var image: URL?
 
-    init( date: Date, description: String, /*longitude: CLLocation, latitude: CLLocation*/ price: Double, title: String, id: Int, image: URL) {
-       // self.people = people
-        self.date = date
-        self.description = description
-//        self.longitude = longitude
-//        self.latitude = latitude
-        self.price =  price
-        self.title = title
-        self.id = id
-        self.image = image
+    enum CodingKeys: String, CodingKey {
+        case people, date
+        case description = "description"
+        case image, longitude, latitude, price, title, id
     }
-
-//    private enum CodingKeys: String, CodingKey {
-//        typealias RawValue = <#type#>
-//
-//          case date: "date"
-//         case description: "   var date: Date
-//              var description: String
-//         //     var longitude: CLLocation
-//         //     var latitude: CLLocation
-//              var price: Double
-//              var title: String
-//              var id: Int
-//              var image: URL""
-//        //     var longitude: CLLocation
-//        //     var latitude: CLLocation
-//             var price: Double
-//             var title: String
-//             var id: Int
-//             var image: URL
-//
-//
-//       }
 }
+
+struct People: Decodable {
+    let picture: String
+    let name, eventID, id: String
+
+    enum CodingKeys: String, CodingKey {
+        case picture, name
+        case eventID = "eventId"
+        case id
+    }
+}
+
 

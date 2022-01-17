@@ -15,6 +15,8 @@ class HomeViewController: UIViewController {
 
     private var homeModel: [HomeModel] = []
 
+    // var home = HomeModel()
+
     //MARK:- init
 
     init() {
@@ -35,9 +37,8 @@ class HomeViewController: UIViewController {
     func loadDataHome() {
         Service.homeEvent { (info) in
             if let info = info {
-                //  self.homeModel = info. date
-
-
+                self.homeModel += info
+                self.collection.reloadData()
             }
         }
     }
@@ -48,19 +49,20 @@ extension HomeViewController: UICollectionViewDelegate{
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 
-        // return homeViewModel.universe.count
-        return 2
+        return homeModel.count
     }
 
     func numberOfSelections(in collectionView: UICollectionView)-> Int{
-        // return homeViewModel.universe.count
-        return 2
+
+        return homeModel.count
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 
+        let home = homeModel[indexPath.row]
+        print(home)
         let cell: HomeCollectionViewCell = collection.dequeueReusableCell(forIndexPath: indexPath)
-
+        cell.setup(with: home)
     }
 }
 
@@ -68,8 +70,9 @@ extension HomeViewController: UICollectionViewDelegate{
 extension HomeViewController: UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let home = homeModel[indexPath.row]
         let cell: HomeCollectionViewCell = collection.dequeueReusableCell(forIndexPath: indexPath)
-
+        cell.setup(with: home)
         return cell
     }
 }

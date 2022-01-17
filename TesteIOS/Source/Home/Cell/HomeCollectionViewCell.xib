@@ -20,21 +20,14 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="STP-ng-MKZ">
                         <rect key="frame" x="0.0" y="0.0" width="314" height="186"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWc-fd-0ho">
-                                <rect key="frame" x="16" y="16" width="228" height="22"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="228" id="QVC-tY-PD9"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWc-fd-0ho">
+                                <rect key="frame" x="16" y="16" width="282" height="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fO0-17-lOp">
-                                <rect key="frame" x="252" y="16" width="46" height="22"/>
-                                <state key="normal" image="chevron.down" catalog="system"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQ9-of-O8R">
-                                <rect key="frame" x="16" y="48" width="200" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQ9-of-O8R">
+                                <rect key="frame" x="16" y="43" width="200" height="20.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="PDc-x3-z9S"/>
                                 </constraints>
@@ -42,37 +35,38 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Arc-Tg-0p6">
-                                <rect key="frame" x="224" y="48" width="74" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Arc-Tg-0p6">
+                                <rect key="frame" x="224" y="43" width="74" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CP7-z2-ig4">
-                                <rect key="frame" x="16" y="85" width="282" height="85"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CP7-z2-ig4">
+                                <rect key="frame" x="16" y="72" width="282" height="98"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="98" id="Tfw-PP-hQL"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="CQ9-of-O8R" firstAttribute="leading" secondItem="PWc-fd-0ho" secondAttribute="leading" id="2nc-LO-Nfc"/>
+                            <constraint firstAttribute="bottom" secondItem="CP7-z2-ig4" secondAttribute="bottom" constant="16" id="35k-Xn-7sJ"/>
                             <constraint firstItem="PWc-fd-0ho" firstAttribute="leading" secondItem="STP-ng-MKZ" secondAttribute="leading" constant="16" id="7MD-uC-4KC"/>
                             <constraint firstItem="Arc-Tg-0p6" firstAttribute="bottom" secondItem="CQ9-of-O8R" secondAttribute="bottom" id="Ccf-gs-mbb"/>
-                            <constraint firstItem="fO0-17-lOp" firstAttribute="top" secondItem="PWc-fd-0ho" secondAttribute="top" id="D0K-kZ-i8u"/>
-                            <constraint firstAttribute="bottom" secondItem="CP7-z2-ig4" secondAttribute="bottom" constant="16" id="Gdw-Xk-Mq3"/>
                             <constraint firstItem="Arc-Tg-0p6" firstAttribute="leading" secondItem="CQ9-of-O8R" secondAttribute="trailing" constant="8" id="KTs-Zk-aP9"/>
+                            <constraint firstItem="Arc-Tg-0p6" firstAttribute="trailing" secondItem="PWc-fd-0ho" secondAttribute="trailing" id="Nj9-c2-taJ"/>
                             <constraint firstAttribute="trailing" secondItem="Arc-Tg-0p6" secondAttribute="trailing" constant="16" id="Uzg-r8-KFI"/>
                             <constraint firstItem="CQ9-of-O8R" firstAttribute="top" secondItem="PWc-fd-0ho" secondAttribute="bottom" constant="10" id="X5L-Qd-PEn"/>
-                            <constraint firstAttribute="trailing" secondItem="fO0-17-lOp" secondAttribute="trailing" constant="16" id="Zpg-ZQ-RkW"/>
                             <constraint firstItem="Arc-Tg-0p6" firstAttribute="top" secondItem="CQ9-of-O8R" secondAttribute="top" id="al3-1B-d3E"/>
                             <constraint firstItem="PWc-fd-0ho" firstAttribute="top" secondItem="STP-ng-MKZ" secondAttribute="top" constant="16" id="hhc-Vf-yDV"/>
+                            <constraint firstItem="CP7-z2-ig4" firstAttribute="top" secondItem="CQ9-of-O8R" secondAttribute="bottom" constant="8.5" id="kIX-Gk-6jG"/>
                             <constraint firstItem="CP7-z2-ig4" firstAttribute="trailing" secondItem="Arc-Tg-0p6" secondAttribute="trailing" id="kg6-kU-s0N"/>
-                            <constraint firstItem="fO0-17-lOp" firstAttribute="leading" secondItem="PWc-fd-0ho" secondAttribute="trailing" constant="8" id="ol4-rs-ed8"/>
-                            <constraint firstItem="fO0-17-lOp" firstAttribute="centerY" secondItem="PWc-fd-0ho" secondAttribute="centerY" id="tmk-e6-yyW"/>
+                            <constraint firstAttribute="trailing" secondItem="PWc-fd-0ho" secondAttribute="trailing" constant="16" id="uCn-hL-uIF"/>
                             <constraint firstItem="CP7-z2-ig4" firstAttribute="leading" secondItem="CQ9-of-O8R" secondAttribute="leading" id="x9h-7n-G1E"/>
-                            <constraint firstItem="CP7-z2-ig4" firstAttribute="top" secondItem="CQ9-of-O8R" secondAttribute="bottom" constant="16" id="xP9-eD-CT8"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -85,10 +79,14 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="314" height="186"/>
+            <connections>
+                <outlet property="cardView" destination="STP-ng-MKZ" id="yO4-cE-ZKE"/>
+                <outlet property="dateLabel" destination="Arc-Tg-0p6" id="Ahc-az-1Rq"/>
+                <outlet property="descriptionLabel" destination="CP7-z2-ig4" id="7vZ-NE-uSk"/>
+                <outlet property="priceLabel" destination="CQ9-of-O8R" id="ZLC-3g-iUt"/>
+                <outlet property="titleLabel" destination="PWc-fd-0ho" id="46N-Uq-1jr"/>
+            </connections>
             <point key="canvasLocation" x="28.985507246376812" y="70.3125"/>
         </collectionViewCell>
     </objects>
-    <resources>
-        <image name="chevron.down" catalog="system" width="64" height="36"/>
-    </resources>
 </document>
