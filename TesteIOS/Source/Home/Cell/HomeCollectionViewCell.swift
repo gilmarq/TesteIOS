@@ -16,8 +16,8 @@ class HomeCollectionViewCell: UICollectionViewCell, NibLoadableView ,ReusableVie
     @IBOutlet weak private var dateLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak private var descriptionLabel: UILabel!
-
     @IBOutlet weak var priceLabel: UILabel!
+    
     //MARK: - variable
     private var home: HomeModel?
 
@@ -25,13 +25,12 @@ class HomeCollectionViewCell: UICollectionViewCell, NibLoadableView ,ReusableVie
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
         setupCard()
     }
 
     //MARK: - private methods
 
-    private func setupCard(){
+    private func setupCard() {
         cardView.layer.masksToBounds = true
         cardView.layer.borderWidth = 1
         cardView.layer.cornerRadius = 10
@@ -40,11 +39,16 @@ class HomeCollectionViewCell: UICollectionViewCell, NibLoadableView ,ReusableVie
     //MARK: - public methods
 
     func setup(with home: HomeModel) {
+        guard let priceValue = home.price else { return }
+        guard let dataValue = home.date else { return }
 
-      // let price = numberFormatter.string(from: home.price)
-      titleLabel.text = home.title
-        descriptionLabel.text = home.description
-        priceLabel.text = String(home.price)
-//dateLabel.text = String(Int: home.date)
+        let formatter = DateFormatter()
+        formatter.dateFormat = "HH:mm"
+        print(formatter.string(from: dataValue))
+        print(dataValue)
+
+        titleLabel.text = home.title
+        dateLabel.text = "até \(String(formatter.string(from: dataValue)))"
+        priceLabel.text = "valor \(String(priceValue)) R$"
     }
 }

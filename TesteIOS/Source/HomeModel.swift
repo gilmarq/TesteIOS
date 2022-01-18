@@ -19,7 +19,7 @@ struct HomeModel: Decodable {
 //}
 
    let people: [People]?
-    let date: Int?
+    let date: Date?
     let description: String?
     let image: String?
     let longitude, latitude, price: Double?
