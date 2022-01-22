@@ -6,21 +6,29 @@
 //  Copyright © 2022 Gilmar Queiroz. All rights reserved.
 //
 
-import Foundation
-import CoreLocation
+import UIKit
 
-struct DetailModel {
-     var date: Data
-     var description: String
-     var longitude: CLLocation
-     var latitude: CLLocation
-     var price: Double
-     var title: String
-     var id: Int
-     var url: URL
-}
+struct DetailModel: Decodable {
 
-struct DetailURL: Codable {
-    let type: String
-    let url: String
+    var people: [People]?
+    var date: Date?
+    var description: String?
+    var image: String?
+    var longitude, latitude: Double?
+    var price: Double?
+    var title: String?
+    var id: String?
+
+
+    enum CodingKeys: String, CodingKey {
+        case people
+        case date
+        case description = "description"
+        case image
+        case longitude
+        case latitude
+        case price
+        case title
+        case id
+    }
 }

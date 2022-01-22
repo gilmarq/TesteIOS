@@ -83,6 +83,8 @@
 		</dict>
 		<key>Kingfisher.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>11</integer>
 		</dict>
@@ -113,11 +115,6 @@
 			<false/>
 			<key>orderHint</key>
 			<integer>16</integer>
-		</dict>
-		<key>SnapshotTesting.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>17</integer>
 		</dict>
 		<key>nanopb.xcscheme</key>
 		<dict>

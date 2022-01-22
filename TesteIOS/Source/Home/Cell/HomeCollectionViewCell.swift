@@ -44,8 +44,6 @@ class HomeCollectionViewCell: UICollectionViewCell, NibLoadableView ,ReusableVie
 
         let formatter = DateFormatter()
         formatter.dateFormat = "HH:mm"
-        print(formatter.string(from: dataValue))
-        print(dataValue)
 
         titleLabel.text = home.title
         dateLabel.text = "até \(String(formatter.string(from: dataValue)))"

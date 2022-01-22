@@ -9,11 +9,14 @@
 import UIKit
 
 class DetailCoordinator {
+
+    var id: String?
     // MARK: - Instance dependencies
     private let navigationController: UINavigationController
 
     // MARK: - Instance state
     private var viewController: DetailViewController!
+    private var viewModel: DetailViewModel?
 
     // MARK: - Initializers
     init(navigationController: UINavigationController) {
@@ -22,7 +25,9 @@ class DetailCoordinator {
 
     // MARK: - Coordinator functions
     func start() {
+        guard let id = id else { return }
         self.viewController = DetailViewController()
+        self.viewController.id = id
         self.navigationController.pushViewController(self.viewController, animated: false)
     }
 }

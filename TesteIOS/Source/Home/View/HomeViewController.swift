@@ -15,8 +15,6 @@ class HomeViewController: UIViewController {
 
     private var homeModel: [HomeModel] = []
 
-    // var home = HomeModel()
-
     //MARK:- init
 
     init() {
@@ -45,6 +43,7 @@ class HomeViewController: UIViewController {
 }
 
 //MARK: - UICollectionViewDelegate
+
 extension HomeViewController: UICollectionViewDelegate{
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -59,14 +58,15 @@ extension HomeViewController: UICollectionViewDelegate{
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 
+        let coordinator = DetailCoordinator(navigationController: navigationController!)
         let home = homeModel[indexPath.row]
-        print(home)
-        let cell: HomeCollectionViewCell = collection.dequeueReusableCell(forIndexPath: indexPath)
-        cell.setup(with: home)
+        coordinator.id = home.id
+        coordinator.start()
     }
 }
 
 //MARK:- UICollectionViewDataSource
+
 extension HomeViewController: UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -78,6 +78,7 @@ extension HomeViewController: UICollectionViewDataSource {
 }
 
 //MARK:- UICollectionViewDelegateFlowLayout
+
 extension HomeViewController: UICollectionViewDelegateFlowLayout {
 
     func  collectionView (_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout,
