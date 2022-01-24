@@ -1,22 +1,21 @@
 //
-//  DetailCoordinator.swift
+//  MapsCoordinator.swift
 //  TesteIOS
 //
-//  Created by Gilmar Queiroz on 13/01/22.
+//  Created by Gilmar Queiroz on 24/01/22.
 //  Copyright © 2022 Gilmar Queiroz. All rights reserved.
 //
 
 import UIKit
 
-class DetailCoordinator {
+class MapsCoordinator {
 
     var id: String?
     // MARK: - Instance dependencies
     private let navigationController: UINavigationController
 
     // MARK: - Instance state
-    private var viewController: DetailViewController!
-
+    private var viewController: MapsViewController!
 
     // MARK: - Initializers
     init(navigationController: UINavigationController) {
@@ -26,8 +25,8 @@ class DetailCoordinator {
     // MARK: - Coordinator functions
     func start() {
         guard let id = id else { return }
-        self.viewController = DetailViewController()
-        self.viewController.id = id
+        self.viewController = MapsViewController()
+
         self.navigationController.pushViewController(self.viewController, animated: false)
     }
 }

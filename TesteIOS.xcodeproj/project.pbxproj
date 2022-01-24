@@ -10,6 +10,9 @@
 		27F92E8685F2004827AB088B /* Pods_TesteIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D82EF25483453B97E115C14 /* Pods_TesteIOS.framework */; };
 		7C025E4C2793BD04005DD496 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C025E4A2793BD04005DD496 /* HomeCollectionViewCell.swift */; };
 		7C025E4D2793BD04005DD496 /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C025E4B2793BD04005DD496 /* HomeCollectionViewCell.xib */; };
+		7C056A07279EE9780002329A /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C056A05279EE9780002329A /* MapsViewController.swift */; };
+		7C056A08279EE9780002329A /* MapsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C056A06279EE9780002329A /* MapsViewController.xib */; };
+		7C056A0C279EE9B70002329A /* MapsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C056A0B279EE9B70002329A /* MapsCoordinator.swift */; };
 		7CD646C9278798E40098381C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD646C8278798E40098381C /* AppDelegate.swift */; };
 		7CD646D2278798EB0098381C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CD646D1278798EB0098381C /* Assets.xcassets */; };
 		7CD646D5278798EB0098381C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CD646D3278798EB0098381C /* LaunchScreen.storyboard */; };
@@ -66,6 +69,9 @@
 		6D82EF25483453B97E115C14 /* Pods_TesteIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TesteIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C025E4A2793BD04005DD496 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		7C025E4B2793BD04005DD496 /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		7C056A05279EE9780002329A /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
+		7C056A06279EE9780002329A /* MapsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapsViewController.xib; sourceTree = "<group>"; };
+		7C056A0B279EE9B70002329A /* MapsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsCoordinator.swift; sourceTree = "<group>"; };
 		7CD646C5278798E40098381C /* TesteIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TesteIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CD646C8278798E40098381C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CD646D1278798EB0098381C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -141,6 +147,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7C056A03279EE9380002329A /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				7C056A09279EE9800002329A /* ViewModel */,
+				7C056A04279EE9510002329A /* View */,
+			);
+			name = Maps;
+			sourceTree = "<group>";
+		};
+		7C056A04279EE9510002329A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7C056A05279EE9780002329A /* MapsViewController.swift */,
+				7C056A06279EE9780002329A /* MapsViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7C056A09279EE9800002329A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
 		7CD646BC278798E40098381C = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +233,7 @@
 		7CD646F927879D770098381C /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				7C056A03279EE9380002329A /* Maps */,
 				7CD64766278FF9C90098381C /* Service */,
 				7CD647042787A12E0098381C /* Coordinator */,
 				7CD64751278FF6D80098381C /* Detail */,
@@ -255,6 +287,7 @@
 				7CD647082787A3090098381C /* LoginCoordinator.swift */,
 				7CD64764278FF8D10098381C /* HomeCoordinator.swift */,
 				7CD6476A278FFD650098381C /* DetailCoordinator.swift */,
+				7C056A0B279EE9B70002329A /* MapsCoordinator.swift */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -530,6 +563,7 @@
 				7CD6475E278FF6D90098381C /* DetailViewController.xib in Resources */,
 				7CD646D2278798EB0098381C /* Assets.xcassets in Resources */,
 				7CD6473D278FF4CA0098381C /* LoginViewController.xib in Resources */,
+				7C056A08279EE9780002329A /* MapsViewController.xib in Resources */,
 				7CD6474A278FF6860098381C /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -667,6 +701,8 @@
 				7CD6476F279108F50098381C /* ProtocoloNib.swift in Sources */,
 				7CD647072787A2C80098381C /* AppCoordinator.swift in Sources */,
 				7CD6473F278FF63D0098381C /* LoginModel.swift in Sources */,
+				7C056A0C279EE9B70002329A /* MapsCoordinator.swift in Sources */,
+				7C056A07279EE9780002329A /* MapsViewController.swift in Sources */,
 				7CD6477127910B2A0098381C /* ProtocoloReusableView.swift in Sources */,
 				7CD6474E278FF6860098381C /* HomeModel.swift in Sources */,
 				7CD6475A278FF6D80098381C /* DetailViewModel.swift in Sources */,
