@@ -19,6 +19,8 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet var priceLabel: UILabel!
+    private var longitude: Double? = 0
+    private var latidute:  Double? = 0
 
     private let viewModel = DetailViewModel()
     private var detailModel: DetailModel?
@@ -50,6 +52,8 @@ class DetailViewController: UIViewController {
 
             self.dateLabel.text = "até \(String(formatter.string(from: dataValue)))"
             self.priceLabel.text = "valor \(String(priceValue)) R$"
+            self.latidute = self.viewModel.lagitude
+            self.longitude = self.viewModel.longitude
 
             if let url = URL(string: self.viewModel.imageURL!) {
                 self.productImage.kf.indicatorType = .activity
@@ -61,6 +65,11 @@ class DetailViewController: UIViewController {
     }
 
     @IBAction func openMaps(_ sender: Any) {
+        let coordinator = MapsCoordinator(navigationController: navigationController!)
+        coordinator.lagitude = self.latidute
+        coordinator.logitude = self.longitude
+        coordinator.name = self.titleLabel.text
+        coordinator.start()
 
     }
 }

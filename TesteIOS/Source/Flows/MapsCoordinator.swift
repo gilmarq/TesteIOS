@@ -10,7 +10,10 @@ import UIKit
 
 class MapsCoordinator {
 
-    var id: String?
+    var logitude: Double?
+    var lagitude: Double?
+    var name: String?
+
     // MARK: - Instance dependencies
     private let navigationController: UINavigationController
 
@@ -24,9 +27,7 @@ class MapsCoordinator {
 
     // MARK: - Coordinator functions
     func start() {
-        guard let id = id else { return }
-        self.viewController = MapsViewController()
-
+        self.viewController = MapsViewController(logitudo: self.logitude,  latitude: self.lagitude, name: self.name!)
         self.navigationController.pushViewController(self.viewController, animated: false)
     }
 }

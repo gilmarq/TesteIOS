@@ -13,6 +13,7 @@
 		7C056A07279EE9780002329A /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C056A05279EE9780002329A /* MapsViewController.swift */; };
 		7C056A08279EE9780002329A /* MapsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C056A06279EE9780002329A /* MapsViewController.xib */; };
 		7C056A0C279EE9B70002329A /* MapsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C056A0B279EE9B70002329A /* MapsCoordinator.swift */; };
+		7C056A0F27A1108D0002329A /* MapsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C056A0E27A1108D0002329A /* MapsModel.swift */; };
 		7CD646C9278798E40098381C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD646C8278798E40098381C /* AppDelegate.swift */; };
 		7CD646D2278798EB0098381C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CD646D1278798EB0098381C /* Assets.xcassets */; };
 		7CD646D5278798EB0098381C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CD646D3278798EB0098381C /* LaunchScreen.storyboard */; };
@@ -72,6 +73,7 @@
 		7C056A05279EE9780002329A /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
 		7C056A06279EE9780002329A /* MapsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapsViewController.xib; sourceTree = "<group>"; };
 		7C056A0B279EE9B70002329A /* MapsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsCoordinator.swift; sourceTree = "<group>"; };
+		7C056A0E27A1108D0002329A /* MapsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsModel.swift; sourceTree = "<group>"; };
 		7CD646C5278798E40098381C /* TesteIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TesteIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CD646C8278798E40098381C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CD646D1278798EB0098381C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -150,7 +152,7 @@
 		7C056A03279EE9380002329A /* Maps */ = {
 			isa = PBXGroup;
 			children = (
-				7C056A09279EE9800002329A /* ViewModel */,
+				7C056A0D27A110710002329A /* model */,
 				7C056A04279EE9510002329A /* View */,
 			);
 			name = Maps;
@@ -165,11 +167,12 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		7C056A09279EE9800002329A /* ViewModel */ = {
+		7C056A0D27A110710002329A /* model */ = {
 			isa = PBXGroup;
 			children = (
+				7C056A0E27A1108D0002329A /* MapsModel.swift */,
 			);
-			name = ViewModel;
+			name = model;
 			sourceTree = "<group>";
 		};
 		7CD646BC278798E40098381C = {
@@ -238,7 +241,6 @@
 				7CD647042787A12E0098381C /* Coordinator */,
 				7CD64751278FF6D80098381C /* Detail */,
 				7CD64742278FF6860098381C /* Home */,
-				7CD64749278FF6860098381C /* HomeModel.swift */,
 				7CD64769278FFA9D0098381C /* Login */,
 				7CD646F827879C4D0098381C /* Infrastructure */,
 			);
@@ -378,6 +380,7 @@
 		7CD64750278FF69D0098381C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7CD64749278FF6860098381C /* HomeModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -693,6 +696,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CD64773279132380098381C /* HomeViewModel.swift in Sources */,
+				7C056A0F27A1108D0002329A /* MapsModel.swift in Sources */,
 				7CD64763278FF7520098381C /* DetailModel.swift in Sources */,
 				7CD64768278FF9C90098381C /* Service.swift in Sources */,
 				7CD64775279142BB0098381C /* Decodable+Extension.swift in Sources */,

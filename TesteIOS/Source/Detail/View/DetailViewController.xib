@@ -85,7 +85,9 @@
                                         <constraint firstAttribute="height" constant="55" id="m4g-vW-Sfg"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                    <state key="normal" title="ver no mapa "/>
+                                    <state key="normal" title="ver no mapa ">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
                                     <connections>
                                         <action selector="openMaps:" destination="-1" eventType="touchUpInside" id="ve2-pI-fOI"/>
                                     </connections>

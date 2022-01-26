@@ -29,6 +29,8 @@ class DetailViewModel {
     var latitudeDouble: Double?
     var priceDouble: Double?
     var idString: String?
+    var longitude: Double?
+    var lagitude: Double?
     
     var didLoadData: (() -> ())?
     
@@ -47,5 +49,7 @@ class DetailViewModel {
         self.priceDouble = self.detailModel?.price
         self.dateDate =  self.detailModel?.date
         self.imageURL = self.detailModel?.image
+        self.longitude = self.detailModel?.longitude
+        self.lagitude = self.detailModel?.latitude
     }
 }

@@ -60,7 +60,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="CQ9-of-O8R" firstAttribute="leading" secondItem="PWc-fd-0ho" secondAttribute="leading" id="2nc-LO-Nfc"/>
-                            <constraint firstAttribute="bottom" secondItem="CP7-z2-ig4" secondAttribute="bottom" constant="19" id="3FT-cj-jqQ"/>
                             <constraint firstItem="PWc-fd-0ho" firstAttribute="leading" secondItem="STP-ng-MKZ" secondAttribute="leading" constant="16" id="7MD-uC-4KC"/>
                             <constraint firstItem="Arc-Tg-0p6" firstAttribute="bottom" secondItem="CQ9-of-O8R" secondAttribute="bottom" id="Ccf-gs-mbb"/>
                             <constraint firstItem="Arc-Tg-0p6" firstAttribute="leading" secondItem="CQ9-of-O8R" secondAttribute="trailing" constant="8" id="KTs-Zk-aP9"/>
