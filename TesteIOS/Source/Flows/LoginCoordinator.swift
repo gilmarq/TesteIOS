@@ -9,7 +9,6 @@
 import UIKit
 
 class LoginCoordinator {
-    var value = ""
 
     // MARK: - Instance dependencies
     private let navigationController: UINavigationController
@@ -25,7 +24,6 @@ class LoginCoordinator {
     // MARK: - Coordinator functions
     func start() {
         self.viewController = LoginViewController()
-
         self.navigationController.pushViewController(self.viewController, animated: false)
     }
 }

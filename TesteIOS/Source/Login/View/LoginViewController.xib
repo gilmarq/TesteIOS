@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="TesteIOS" customModuleProvider="target">
+            <connections>
+                <outlet property="emailLabel" destination="1Sg-Rm-Ehb" id="BL4-MY-bH8"/>
+                <outlet property="idLabel" destination="bVz-w0-D4i" id="TeH-Dw-jKE"/>
+                <outlet property="nameLabel" destination="qSz-FI-p8h" id="yxL-ca-eq8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IaA-qO-gBg">
+                    <rect key="frame" x="16" y="16" width="288" height="24"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="numero identificador" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bVz-w0-D4i">
+                    <rect key="frame" x="16" y="70" width="288" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Sg-Rm-Ehb">
+                    <rect key="frame" x="16" y="158" width="288" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eap-zD-BKV" customClass="CustomButton" customModule="TesteIOS" customModuleProvider="target">
+                    <rect key="frame" x="16" y="483" width="288" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="7Bd-ON-QGO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <state key="normal" title="CheckIn">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="checkIn:" destination="-1" eventType="touchUpInside" id="lui-g8-a99"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qSz-FI-p8h">
+                    <rect key="frame" x="16" y="114" width="288" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="1Sg-Rm-Ehb" firstAttribute="leading" secondItem="qSz-FI-p8h" secondAttribute="leading" id="9qg-2X-TiE"/>
+                <constraint firstItem="eap-zD-BKV" firstAttribute="trailing" secondItem="1Sg-Rm-Ehb" secondAttribute="trailing" id="EFb-G1-cJE"/>
+                <constraint firstItem="qSz-FI-p8h" firstAttribute="leading" secondItem="IaA-qO-gBg" secondAttribute="leading" id="F9u-p9-zg2"/>
+                <constraint firstItem="eap-zD-BKV" firstAttribute="leading" secondItem="1Sg-Rm-Ehb" secondAttribute="leading" id="GNP-up-XDn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="IaA-qO-gBg" secondAttribute="trailing" constant="16" id="K5e-XQ-gYc"/>
+                <constraint firstItem="qSz-FI-p8h" firstAttribute="top" secondItem="bVz-w0-D4i" secondAttribute="bottom" constant="10" id="OeG-Id-cbd"/>
+                <constraint firstItem="IaA-qO-gBg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="PUe-aP-MDD"/>
+                <constraint firstItem="bVz-w0-D4i" firstAttribute="leading" secondItem="IaA-qO-gBg" secondAttribute="leading" id="SO5-2B-xPg"/>
+                <constraint firstItem="1Sg-Rm-Ehb" firstAttribute="trailing" secondItem="qSz-FI-p8h" secondAttribute="trailing" id="VXp-37-weK"/>
+                <constraint firstItem="bVz-w0-D4i" firstAttribute="top" secondItem="IaA-qO-gBg" secondAttribute="bottom" constant="30" id="Zxa-eb-357"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="eap-zD-BKV" secondAttribute="bottom" constant="30" id="d07-W5-ap7"/>
+                <constraint firstItem="1Sg-Rm-Ehb" firstAttribute="top" secondItem="qSz-FI-p8h" secondAttribute="bottom" constant="10" id="efC-kI-cT9"/>
+                <constraint firstItem="IaA-qO-gBg" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="tBt-6i-Ggy"/>
+                <constraint firstItem="bVz-w0-D4i" firstAttribute="trailing" secondItem="IaA-qO-gBg" secondAttribute="trailing" id="uAg-Af-CWi"/>
+                <constraint firstItem="qSz-FI-p8h" firstAttribute="trailing" secondItem="IaA-qO-gBg" secondAttribute="trailing" id="yVa-86-GvZ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="138.75" y="99.295774647887328"/>
+        </view>
+    </objects>
+</document>
